@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,13 +8,15 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/BG">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome!"
-        android:textSize="36dp"/>
+        android:text="SIGN UP"
+        android:textSize="50dp"
+        android:layout_marginBottom="150dp"/>
 
     <EditText
         android:layout_gravity="center"
@@ -21,9 +24,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:hint="    First Name    "
-        android:textSize="20dp"
-        android:layout_marginTop="5dp"/>
+        android:hint="      First Name      "
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextdesign"/>
 
 
     <EditText
@@ -31,11 +35,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:hint="      Last Name     "
-        android:textSize="20dp"
+        android:hint="       Last Name      "
+        android:textSize="25dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextdesign"/>
 
     <EditText
         android:id="@+id/SuEmail"
@@ -44,9 +49,10 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:hint="           Email          "
+        android:hint="            Email           "
         android:inputType="textEmailAddress"
-        android:textSize="20dp" />
+        android:textSize="25dp"
+        android:background="@drawable/edittextdesign"/>
 
 
 
@@ -57,16 +63,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="       Password       "
-        android:textSize="20dp"
-        android:layout_marginTop="5dp"/>
+        android:hint="       Password        "
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextdesign" />
 
     <Button
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIGN UP"
-        android:layout_marginTop="10dp"/>
-
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"/>
 
 </LinearLayout>
