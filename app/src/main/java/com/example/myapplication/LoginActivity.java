@@ -6,26 +6,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-    private EditText email;
-    private Button button;
+public class LoginActivity extends AppCompatActivity {
+    private TextView textView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
-        button= (Button) findViewById(R.id.register);
-        button.setOnClickListener(new View.OnClickListener() {
+        textView= (TextView) findViewById(R.id.create);
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openchallenges();
+                openactivity_main();
             }
         });
     }
-    public void openchallenges(){
-        Intent intent= new Intent(this, challenges.class);
+    public void openactivity_main(){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+
     }
 }
